@@ -18,9 +18,10 @@ x <- vector("numeric", length = 10)  # init 0
 x <- vector("character", length=10)  # init ""
 x <- vector("logical", length=10)    # init F
 
-z <- c(1.7, "a") ## character
-z <- c(TRUE, 2) ## numeric
-z <- c("a", TRUE) ## character
+## Mixing Objects
+y <- c(1.7, "a") ## character
+y <- c(TRUE, 2) ## numeric
+y <- c("a", TRUE) ## character
 
 ## Explicit Coercion
 x <- 0:6
