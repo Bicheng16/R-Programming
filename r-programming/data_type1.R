@@ -25,7 +25,7 @@ y <- c("a", TRUE) ## character
 
 ## Explicit Coercion
 x <- 0:6
-class(x)
+class(x) # get type of x
 
 as.numeric(x)
 
@@ -34,6 +34,10 @@ as.logical(x)
 as.character(x)
 
 ## Nonsensical coercion results NAS
+x <- c("a", "b", "c")
+as.numeric(x)
+as.logical(x)
+as.complex(x)
 
-## Lists
-x <- list(1, "a", TRUE, 1+4i)
+## Lists: type of vector that can contain elements of different classes
+x <- list(1, "a", TRUE, 1+4i) # get accessed by x[[index]] for operations
