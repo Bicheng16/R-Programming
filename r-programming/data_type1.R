@@ -41,3 +41,40 @@ as.complex(x)
 
 ## Lists: type of vector that can contain elements of different classes
 x <- list(1, "a", TRUE, 1+4i) # get accessed by x[[index]] for operations
+
+## Matrix
+m <- matrix(nrow=2, ncol=3)   
+
+# Stored by column wise
+m <- matrix(1:6, nrow=2, ncol=3)
+m
+
+m <- 1:10
+m
+
+dim(m) <- c(2,5)
+m
+
+# cbind-ing and rbind-ing
+# Matrix created by column-binding or row-binding with cbind() and rbind()
+x <- 1:3
+y <- 10:12
+cbind(x,y)  # x, y are both column vectors and horizontally concatenated
+
+rbind(x,y) # x, y are both row vectors and vertically concatenated
+
+## Factors
+x <- factor(c("yes", "yes", "no", "yes", "no"))
+x
+table(x) # Frequency count
+
+unclass(x) # encode it
+
+
+# Specify levels (ranking)
+x <- factor(c("yes", "yes", "no", "yes", "no"), levels = c("yes", "no"))
+
+
+
+
+
