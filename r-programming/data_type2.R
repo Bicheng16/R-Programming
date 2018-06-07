@@ -34,8 +34,16 @@ ncol(x)
 data.matrix(x)
 
 ## Names
-# 
+# vector
 x <- 1:3
 names(x)
 names(x) <- c("foo", "bar", "norf")
 x
+
+# List with names
+x <- list(a=1, b=2, c=3)
+x
+
+# Matrix with dimnames
+m <- matrix(1:4, nrow=2, ncol=2)
+dimnames(m) <- list(c("a","b"),c("c","d"))

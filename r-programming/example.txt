@@ -1,0 +1,8 @@
+*
+*
+*
+Student ID,Math,English,Physics
+# student ID and scores
+1,90,85,78
+2,60,100,54
+3,95,94,100
